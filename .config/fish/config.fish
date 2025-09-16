@@ -1,10 +1,7 @@
 # deps: starship, atuin, zoxide, eza, nvim, trash-cli
 
 if status is-interactive
-    set -gx PATH /opt/homebrew/bin $PATH
     fish_default_key_bindings
-
-    fish_add_path -P ~/.local/bin ~/.cargo/bin ~/.luarocks/bin/
 
     starship init fish | source
     atuin init fish --disable-up-arrow | source
